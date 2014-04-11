@@ -11,13 +11,10 @@
     
     <!-- custom fonts -->
     <link href='http://fonts.googleapis.com/css?family=Love+Ya+Like+A+Sister' rel='stylesheet' type='text/css'>
-
   </head>
   <body>
-
-  	
-    <!-- Nav -->
-    
+ 	
+    <!-- Nav -->  
     <nav  data-magellan-expedition="fixed">
     	 <dl class="sub-nav"> 
     	 	<dd data-magellan-arrival="about">

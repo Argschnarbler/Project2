@@ -10,7 +10,7 @@
 	else
 	{
 		//rertrieve data
-		$db = mysqli_connect("localhost","db200193940","63224","db200193940") or die("Error " . mysqli_error($db));
+		require_once 'include/db.php';
 	 
 		//Get user id
 		$sql = "SELECT * FROM Contacts ORDER BY name";
@@ -42,7 +42,7 @@
   	<head>
 	    <meta charset="utf-8" />
 	    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-	    <title>Jacob Meikle | Portfolio</title>
+	    <title>Create Survey</title>
 	    <link rel="stylesheet" href="css/foundation.css" />
 	    <link rel="stylesheet" href="css/custom.css" />
 	    <script src="js/jquery.js"></script>    
@@ -55,7 +55,7 @@
 	    <nav  data-magellan-expedition="fixed">
 	    	 <dl class="sub-nav"> 
 	    	 	<dd data-magellan-arrival="Back">
-	    	 		<a href="index.php">Back to Site</a>
+	    	 		<a href="index.php">Home</a>
 	    	 	</dd> 
 	    	 </dl> 
 	    </nav>

@@ -4,8 +4,7 @@
 session_start();
 
 //Create Db connection
-
-$db = mysqli_connect("localhost","db200193940","63224","db200193940") or die("Error " . mysqli_error($db));
+require_once 'include/db.php';
  
 //Handle login post
 if($_POST && empty($_SESSION['UserID']))
@@ -42,18 +41,20 @@ else
 	'
 	<br/>
 	<div class="row">
-	<div id="loginBox" class="large-6 large-offset-1  medium-8 medium-offset-1  small-10  small-offset-1 columns">
-	<form action="'.$_SERVER['PHP_SELF'].'" method="post" name="surveyForm">
-	<label for="username">Username</label>
-	<input type="text" name="username" />
-	<br/>
-	<label for="pass">Password</label>
-	<input type="password" name="pass" />
-	<br/>
-	<input type="submit" value="Login" />
-	</form>
-	</div>
-	
+		<h2> Login</h2>
+		<div id="loginBox" class="large-6 large-offset-1  medium-8 medium-offset-1  small-10  small-offset-1 columns">
+			<form action="'.$_SERVER['PHP_SELF'].'" method="post" name="surveyForm">
+			<label for="username">Username</label>
+			<input type="text" name="username" />
+			<br/>
+			<label for="pass">Password</label>
+			<input type="password" name="pass" />
+			<br/>
+			<input type="submit" value="Login" />
+			</form>
+			<a href="register.php">Register</a>
+		</div>
+		<br/>
 	</div>
 
 	';
