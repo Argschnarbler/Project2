@@ -13,38 +13,32 @@ if($_POST){
 			//save new person to db
 			$sql = "INSERT INTO tbl_users (username,email,password) VALUES ('".$_POST['username']."','".$_POST['email']."','".$_POST['pass']."')";
 			$db->query($sql);
-			echo 'User created';	
+			$msg = 'User created';	
 		}
 		else
 		{
 			//user exists
-			echo 'User already exists';	
+			$msg = 'User already exists';	
 		}
 	}
 	else
 	{
 		//invalid submition
-		echo 'missing, or invalid information';
+		$msg = 'missing, or invalid information';
 	}
 }
 	
 ?>
 <!doctype html>
 <html class="no-js" lang="en">
-  	<head>
-	    <meta charset="utf-8" />
-	    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-	    <title>Register</title>
-	    <link rel="stylesheet" href="css/foundation.css" />
-	    <link rel="stylesheet" href="css/custom.css" />
-	    <script src="js/jquery.js"></script>    
-	    <!-- custom fonts -->
-	    <link href='http://fonts.googleapis.com/css?family=Love+Ya+Like+A+Sister' rel='stylesheet' type='text/css'>
-  	</head>
- 	<body> 		
+  	<?php require_once 'include/head.php'; ?>
+ 	<body> 				
+	<?php require_once 'include/nav.php'; ?>
+ 		
 		<div class="row">
 			<h2> Register New User</h2>
 			<div id="loginBox" class="large-6 large-offset-1  medium-8 medium-offset-1  small-10  small-offset-1 columns">
+				<?php echo '<p>'.$msg.'</p>'; ?>
 				<form action="<?php echo $_SERVER['PHP_SELF']; ?>" method="post" name="registerForm">
 				<label for="username">Username</label>
 				<input type="text" name="username" />
@@ -59,5 +53,6 @@ if($_POST){
 				</form>
 			</div>
 		</div>
+		<?php include 'include/foot.php'; ?>
 	</body>
 </html>
