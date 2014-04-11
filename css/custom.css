@@ -1,0 +1,85 @@
+/*<!-- File: custom.css Author: Jacob Meikle Website: Assignment1 File Desc: Custom Styles reside here. -->*/
+
+
+/* custom styles*/  
+body{
+	background-image: url("../img/bg.png");
+	background-repeat: y;
+}
+
+body, a, h1, h2, h3, h4, h5, h6{
+		font-family: 'Love Ya Like A Sister', "Helvetica Neue", "Helvetica", Helvetica, Arial, sans-serif, cursive;
+}
+
+table{
+	width: 100%;
+	text-align:center;
+}
+
+#resume{
+	max-height: 500px;
+	padding: 2%;
+}
+
+#resume-small{
+	max-height:150px;
+	padding: 2%;
+	position:relative;
+	left:0;
+}
+
+section{
+	min-height:400px;
+}
+
+.navAnchor{
+	position:relative;
+	top:-25px;
+}
+
+#keepConnected{
+	position: fixed;
+}
+
+.icon{
+	max-height:50px;
+}
+
+#bioArticle{
+	width:60%;
+}
+
+#bioImage{
+	background-color:#262626;
+	padding: 1%;
+}
+
+#aboutBG{
+	background-image:url('../img/bg1.jpg');
+}
+
+#mainBody{
+	
+	border: #000000 solid 1px;
+}
+
+#bannerImg{
+	
+	max-height:30px;
+	position:abosolute;
+}
+
+h1{
+	display:none;
+}
+
+#welcome{
+	margin-top:10px;
+}
+
+#welcome h3{
+	font-family: 'Love Ya Like A Sister', cursive;
+	font-size:50px;
+}
+
+
