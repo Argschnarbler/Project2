@@ -19,11 +19,11 @@
 		
 		if($result->num_rows > 0)
 		{
-			$surveyHTML = "<table> <thead> <th> Contacts </th> </thead>";
+			$surveyHTML = "<table> <thead> <th> My Surveys </th> <th> Report </th> </thead>";
 			
 			//iterate through and generate html
 			while ($row = $result->fetch_assoc()) {
-		        $surveyHTML .= '<tr><td onclick=" alert(\' Name: '.$row['Name'].' Phone: '.$row['Phone'].' Address: '.$row['Address'].' \'); ">'.$row['Name'].'</td> </tr>';
+		        $surveyHTML .= '<tr><td>'.$row['surveyname'].'</td> <td> <a href="surveyreporting.php?survid='.$row['surveyid'].'"> Report </a> </td> </tr>';
 		    }
 			
 			$surveyHTML .= "</table>";
