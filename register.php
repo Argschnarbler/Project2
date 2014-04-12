@@ -1,4 +1,5 @@
 <?php
+//<!-- File: register.php Author: Jacob Meikle Website: Project2 File Desc: This page allows you to create a new user. --> 
 //Process post data
 if($_POST){
 	require_once 'include/db.php';

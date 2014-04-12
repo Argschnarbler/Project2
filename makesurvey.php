@@ -1,5 +1,5 @@
-<!-- File: mycontacts.php Author: Jacob Meikle Website: Assignment3 File Desc: This page shows contacts --> 
 <?php
+	//<!-- File: makesurvey.php Author: Jacob Meikle Website: Project2 File Desc: This page shows the users surveys, and the templates available for creation. --> 
 	session_start();
 	require_once 'include/security.php';
 

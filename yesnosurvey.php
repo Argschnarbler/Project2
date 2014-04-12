@@ -1,4 +1,5 @@
 <?php
+	//<!-- File: yesnosurvey.php Author: Jacob Meikle Website: Project2 File Desc: This page allows you to create a survey of the yes / no template. --> 
 	session_start();
 	require_once 'include/security.php';
 	//Create Db connection
@@ -32,9 +33,7 @@
 		}
 	}
 ?>
-
 <!doctype html>
-<!-- File: index.php Author: Jacob Meikle Website: Assignment2 File Desc: This is the entire single page desktop site. --> 
 <html class="no-js" lang="en">
 	<?php require_once 'include/head.php'; ?>
 

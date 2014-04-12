@@ -1,4 +1,7 @@
-<?php session_start(); ?>
+<?php 
+//<!-- File: nav.php Author: Jacob Meikle Website: Project2 File Desc: This scriplet creates a common nav --> 
+session_start(); 
+?>
 <!-- Nav -->
 <nav  data-magellan-expedition="fixed">
 	 <dl class="sub-nav"> 

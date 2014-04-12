@@ -1,4 +1,5 @@
 <?php
+//<!-- File: editprofile.php Author: Jacob Meikle Website: Project2 File Desc: This page allows you to edit your user profile. --> 
 session_start();
 require_once 'include/security.php';
 require_once 'include/db.php';

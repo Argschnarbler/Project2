@@ -1,6 +1,5 @@
 <?php
-// File: login.php Author: Jacob Meikle Website: Assignment3 File Desc: This page allows the user to log in
-
+//<!-- File: login.php Author: Jacob Meikle Website: Project2 File Desc: This page allows you to log in. --> 
 session_start();
  
 //Handle login post

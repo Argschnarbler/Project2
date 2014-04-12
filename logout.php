@@ -1,5 +1,5 @@
-<!-- File: logout.php Author: Jacob Meikle Website: Assignment3 File Desc: This logs out the user--> 
 <?php
+	//<!-- File: logout.php Author: Jacob Meikle Website: Project2 File Desc: This page allows you to log out. --> 
 	session_start();
 
 	$_SESSION['userid'] = "";

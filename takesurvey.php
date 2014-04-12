@@ -1,4 +1,5 @@
 <?php
+//<!-- File: takesurvey.php Author: Jacob Meikle Website: Project2 File Desc: This page allows anyone to fill out a survey and saves the data. --> 
 session_start();
 	require_once 'include/security.php';
 
@@ -64,7 +65,6 @@ session_start();
 ?>
 
 <!doctype html>
-<!-- File: index.php Author: Jacob Meikle Website: Assignment2 File Desc: This is the entire single page desktop site. --> 
 <html class="no-js" lang="en">
 	<?php require_once 'include/head.php'; ?>
 

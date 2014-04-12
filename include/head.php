@@ -1,3 +1,4 @@
+<!-- File: head.php Author: Jacob Meikle Website: Project2 File Desc: This scriplet contains a common header --> 
 <head>
 	<meta charset="utf-8" />
 	<meta name="viewport" content="width=device-width, initial-scale=1.0" />

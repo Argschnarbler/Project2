@@ -1,4 +1,5 @@
 <?php
+//<!-- File: index.php Author: Jacob Meikle Website: Project2 File Desc: This page serves as home and shows which surveys are available. --> 
 //rertrieve survey data
 require_once 'include/db.php';
  
@@ -29,7 +30,6 @@ if($_GET)
 }
 ?>
 <!doctype html>
-<!-- File: index.php Author: Jacob Meikle Website: Assignment2 File Desc: This is the entire single page desktop site. --> 
 <html class="no-js" lang="en">
 	<?php require_once 'include/head.php'; ?>
 
