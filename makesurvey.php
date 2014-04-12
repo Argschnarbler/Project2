@@ -3,37 +3,31 @@
 	session_start();
 	require_once 'include/security.php';
 
-	if(empty($_SESSION['userid']))
+
+	//rertrieve survey data
+	require_once 'include/db.php';
+ 
+
+	$sql = "SELECT * FROM tbl_yesnosurveys WHERE userid = ".$_SESSION['userid'];
+	$result = $db->query($sql);
+	
+	if($result->num_rows > 0)
 	{
-		header('Location: login.php');
-		exit;
+		$surveyHTML = "<table> <thead> <th> My Surveys </th> <th> Report </th> </thead>";
+		
+		//iterate through and generate html
+		while ($row = $result->fetch_assoc()) {
+	        $surveyHTML .= '<tr><td>'.$row['surveyname'].'</td> <td> <a href="surveyreporting.php?survid='.$row['surveyid'].'"> Report </a> </td> </tr>';
+	    }
+		
+		$surveyHTML .= "</table>";
 	}
 	else
 	{
-		//rertrieve survey data
-		require_once 'include/db.php';
-	 
-
-		$sql = "SELECT * FROM tbl_yesnosurveys WHERE userid = ".$_SESSION['userid'];
-		$result = $db->query($sql);
-		
-		if($result->num_rows > 0)
-		{
-			$surveyHTML = "<table> <thead> <th> My Surveys </th> <th> Report </th> </thead>";
-			
-			//iterate through and generate html
-			while ($row = $result->fetch_assoc()) {
-		        $surveyHTML .= '<tr><td>'.$row['surveyname'].'</td> <td> <a href="surveyreporting.php?survid='.$row['surveyid'].'"> Report </a> </td> </tr>';
-		    }
-			
-			$surveyHTML .= "</table>";
-		}
-		else
-		{
-			$surveyHTML = "no surveys.";
-		}
-		
+		$surveyHTML = "no surveys.";
 	}
+		
+	
 
 ?>
 

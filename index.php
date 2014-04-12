@@ -21,6 +21,12 @@ else
 {
 	$surveyHTML = "no surveys.";
 }
+
+//display success message
+if($_GET)
+{
+	$msg = "Survey saved";
+}
 ?>
 <!doctype html>
 <!-- File: index.php Author: Jacob Meikle Website: Assignment2 File Desc: This is the entire single page desktop site. --> 
@@ -34,6 +40,7 @@ else
     <!-- Content -->
     <div class="row">
     	<h2>Take Surveys</h2>
+    	<?php if($msg){echo '<p>'.$msg.'</p>';} ?>
 		<?php  echo $surveyHTML; ?>	
 				
 
