@@ -52,6 +52,7 @@
     <!-- Content -->
     <div class="row">
     	<h2>Create Yes / No Survey</h2>
+    	<p> All questions should be answered by yes or no via checkbox.</p>
     	<?php if($msg){echo '<p>'.$msg.'</p>';} ?>
 		
 		<form action="<?php echo $_SERVER['PHP_SELF']; ?>" method="post" name="createyesnosurvey">
